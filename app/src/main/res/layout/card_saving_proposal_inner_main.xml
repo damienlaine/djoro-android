@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_margin="5sp"
+          android:gravity="center_vertical"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_saving_proposal_type_image"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calendar"
+            android:layout_marginRight="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/card_saving_proposal_description"
+            android:layout_width="210sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_saving_proposal_type_image"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_saving_proposal_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_savings_report_title"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:paddingBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/card_saving_proposal_content"
+                android:layout_below="@id/card_saving_proposal_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_savings_report_content"
+                android:textColor="@color/card_title_color"
+                android:fontFamily="sans-serif"
+                android:textSize="12sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_saving_proposal_amount"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/card_saving_proposal_inner_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="4.75"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/card_saving_proposal_inner_currency"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/card_saving_proposal_inner_amount"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:text="@string/euro_symbol"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/card_saving_proposal_inner_economy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/card_saving_proposal_inner_amount"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/card_title_color"
+                android:textSize="10sp"
+                android:text="@string/economy"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"/>
+
+         </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_apply"
+        android:textAllCaps="true"
+        android:textColor="@color/button_color_orange"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center"
+        style="?android:attr/borderlessButtonStyle" />
+
+</LinearLayout>

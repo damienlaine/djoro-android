@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setTemperatureDialogLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_set_temperature_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/dialog_set_temperature_choice_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dialog_set_temperature_choice_number_picker"
+            android:layout_alignTop="@id/dialog_set_temperature_choice_number_picker"
+            android:paddingTop="50sp"
+            android:text="@string/celsuis_degree"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            />
+
+        <Spinner
+            android:id="@+id/temp_mode_spinner"
+            android:paddingTop="10sp"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_below="@id/dialog_set_temperature_choice_number_picker"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

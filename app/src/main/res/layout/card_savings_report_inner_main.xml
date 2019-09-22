@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="3dp"
+      android:gravity="center_vertical"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/card_savings_report_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_economie"
+        android:paddingRight="15dp"/>
+
+    <TextView
+        android:id="@+id/card_savings_report_title"
+        android:layout_toRightOf="@id/card_savings_report_title_icon"
+        android:layout_alignBaseline="@id/card_savings_report_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_savings_report_title"
+        android:textColor="@color/card_title_color"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginTop="4sp"/>
+
+    <RelativeLayout
+        android:id="@+id/card_savings_report_inner_amount_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:id="@+id/card_savings_report_inner_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="110sp"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/card_savings_report_inner_currency"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/card_savings_report_inner_amount"
+            android:layout_alignRight="@+id/card_savings_report_inner_cents"
+            android:fontFamily="sans-serif"
+            android:textSize="50sp"
+            android:text="@string/euro_symbol"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/card_savings_report_inner_cents"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/card_savings_report_inner_amount"
+            android:layout_toRightOf="@+id/card_savings_report_inner_amount"
+            android:fontFamily="sans-serif"
+            android:textSize="35sp"
+            android:layout_marginTop="17sp"/>
+
+    </RelativeLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/card_savings_report_inner_save_more_button"
+        fbutton:buttonColor="@color/button_color_orange"
+        fbutton:shadowColor="@color/button_color_orange_shadow"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="3dp"
+        fbutton:cornerRadius="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_savings_report_inner_amount_total"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_fragment_save_more"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginBottom="10sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"/>
+</RelativeLayout>

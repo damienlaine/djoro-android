@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1'
+    defaultConfig {
+        applicationId "djoro.thermabs.com.app"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            versionNameSuffix 'debug'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:19.0.1'
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.google.http-client:google-http-client-jackson:1.18.0-rc'
+    compile 'com.octo.android.robospice:robospice:1.4.12'
+    compile 'com.octo.android.robospice:robospice-google-http-client:1.4.12'
+    compile 'com.github.gabrielemariotti.cards:library:1.8.0'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.github.machinarius:preferencefragment:0.1.1'
+}

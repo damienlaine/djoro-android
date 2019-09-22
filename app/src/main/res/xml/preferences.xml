@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_dev_settings_title"
+        android:key="pref_key_dev_settings">
+
+        <com.thermlabs.djoro.app.utils.DjoroEditTextPreference
+            android:key="@string/pref_key_server_url"
+            android:summary="@string/pref_summary_server_url"
+            android:title="@string/pref_title_server_url"
+            android:dialogTitle="@string/pref_dialog_title_edittext_server_url"
+            android:defaultValue="https://api.djoro.com"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,42 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <!--Djoro colors-->
+    <color name="action_bar_background_color">#E81D62</color>
+    <color name="notification_bar_background_color">#C1175A</color>
+    <color name="button_color_pink">#E81D62</color>
+    <color name="button_color_pink_light">#F48EB0</color>
+    <color name="button_color_pink_shadow">#C1175A</color>
+    <color name="button_color_orange">#FFAB40</color>
+    <color name="button_color_orange_shadow">#CC8933</color>
+    <color name="button_color_red">#DB0B0B</color>
+    <color name="button_color_red_light">#E96D6D</color>
+    <color name="button_color_red_shadow">#910101</color>
+    <color name="button_color_green">#04BF10</color>
+    <color name="button_color_green_light">#82DF88</color>
+    <color name="button_color_green_shadow">#03910C</color>
+    <color name="button_color_grey">#BAB9B8</color>
+    <color name="button_color_grey_shadow">#636362</color>
+    <color name="card_title_color">#BAB9B8</color>
+    <color name="activity_main_background_color">#e6e6e6</color>
+    <color name="demo_title_section_textcolor">#2a84a5</color>
+    <color name="button_link_color">#2a84a5</color>
+
+    <color name="card_temp_control_title_container_away">#DEF1FD</color>
+    <color name="card_temp_control_title_text_away">#7A9BAF</color>
+    <color name="card_temp_control_title_container_boost">#EDDA36</color>
+    <color name="card_temp_control_title_text_boost">#434343</color>
+    <color name="card_temp_control_title_container_comfort">#EFECEA</color>
+    <color name="card_temp_control_title_text_comfort">#434343</color>
+    <color name="card_temp_control_title_container_night">#7A9BAF</color>
+    <color name="card_temp_control_title_text_night">#E4EBEF</color>
+
+    <color name="clock_white">#ffffff</color>
+    <color name="clock_gray">#80ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white">#66ffffff</color>
+
+
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:gravity="center_vertical"
+      android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/card_temp_control_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:background="@color/card_temp_control_title_container_comfort">
+        <ImageView
+            android:id="@+id/card_temp_control_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comfort"
+            android:layout_gravity="center"
+            android:paddingRight="15dp"/>
+
+        <TextView
+            android:id="@+id/card_temp_control_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/card_temp_control_title_icon"
+            android:text="@string/card_temp_control_title_mode_comfort"
+            android:textColor="@color/card_temp_control_title_text_comfort"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/card_temp_control_inner_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_temp_control_title_container">
+
+        <TextView
+            android:id="@+id/card_temp_control_inner_target_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="110sp"
+            android:text="17"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/card_temp_control_inner_target_unit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/card_temp_control_inner_target_temperature"
+            android:layout_toRightOf="@+id/card_temp_control_inner_target_temperature"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:text="@string/celsuis_degree"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_temp_control_inner_measured_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_temp_control_inner_temperature">
+
+        <TextView
+            android:id="@+id/card_temp_control_inner_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="@string/temp_control_now"/>
+
+        <TextView
+            android:id="@+id/card_temp_control_inner_measured_temperature_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/card_temp_control_inner_text"
+            android:layout_toRightOf="@+id/card_temp_control_inner_text"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="19"/>
+
+        <TextView
+            android:id="@+id/card_temp_control_inner_measured_unit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/card_temp_control_inner_text"
+            android:layout_toRightOf="@+id/card_temp_control_inner_measured_temperature_value"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="@string/celsuis_degree"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_temp_control_inner_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_temp_control_inner_measured_temperature"
+        android:layout_marginTop="4sp">
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/card_temp_control_set_away_button"
+            fbutton:buttonColor="@color/button_color_grey"
+            fbutton:shadowColor="@color/button_color_grey_shadow"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/SetAwayButton"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginRight="20sp"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:textAllCaps="true"
+            android:includeFontPadding="false"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/card_temp_control_boost_button"
+            fbutton:buttonColor="@color/button_color_grey"
+            fbutton:shadowColor="@color/button_color_grey_shadow"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/BoostButton"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="20sp"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:textAllCaps="true"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@id/card_temp_control_set_away_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

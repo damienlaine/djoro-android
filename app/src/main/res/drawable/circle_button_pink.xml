@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom 1dp Shadow -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4D4D4D" />
+        </shape>
+    </item>
+    <item android:bottom="1dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/button_color_pink_shadow" />
+        </shape>
+    </item>
+    <item android:bottom="2dp" android:id="@+id/circle_pink_shadow_foreground">
+        <shape  android:shape="oval">
+            <solid android:color="@color/button_color_pink" />
+        </shape>
+    </item>
+</layer-list>

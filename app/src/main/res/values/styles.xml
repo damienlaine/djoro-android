@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DjoroTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/DjoroActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/DjoroActionButtonOverflow</item>
+    </style>
+
+    <style name="DjoroActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar_background_color</item>
+        <item name="android:titleTextStyle">@style/DjoroActionBarTitle</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="DjoroActionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+
+    <style name="DjoroActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:color">#ffffff</item>
+    </style>
+
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff001b7c</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <!-- Text for sections -->
+    <style name="DjoroTheme.TitleText">
+        <item name="android:textSize">@dimen/demo_title_section_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginRight">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginBottom">@dimen/demo_title_section_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/demo_title_section_margin_top</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/demo_title_section_textcolor</item>
+    </style>
+
+
+    <style name="body">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+</resources>

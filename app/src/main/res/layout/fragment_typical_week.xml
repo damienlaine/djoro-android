@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/typical_week_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background_color">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color_pink_light"
+        android:text="@string/displayed_title_fragment_typical_week"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="10sp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/button_color_grey"/>
+
+    <LinearLayout
+        android:id="@+id/workingDaysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10sp">
+
+        <TextView style="?android:textAppearanceMedium"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WorkingDay"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/workingDays"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:orientation="horizontal">
+            <!-- Day buttons are put here programatically -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workingDaysTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/workingDaysWakeUp"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wakeUpTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/workingDaysWakeUpTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/workingDaysGoToBed"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goToBedTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/workingDaysGoToBedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/workingDaysGoToWork"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goToWorkTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/workingDaysGoToWorkTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/workingDaysBackHome"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/backHomeTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/workingDaysBackHomeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+     </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/button_color_grey"/>
+
+    <LinearLayout
+        android:id="@+id/nonWorkingDaysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5sp">
+
+
+
+
+        <TextView style="?android:textAppearanceMedium"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nonWorkingDay"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/nonWorkingDays"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+            <!-- Day buttons are put here programatically -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nonWorkingDaysTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/nonWorkingDaysWakeUp"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wakeUpTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/nonWorkingDaysWakeUpTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp">
+                <TextView
+                    android:id="@+id/nonWorkingDaysGoToBed"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goToBedTime"
+                    android:textColor="@color/card_temp_control_title_text_comfort"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/nonWorkingDaysGoToBedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:40"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4sp"
+                    android:paddingLeft="5sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/updateButtons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/validationButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/typical_week_cancel_button"
+                android:text="@string/CancelButton"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textColor="@color/button_color_pink"
+                android:id="@+id/typical_week_ok_button"
+                android:text="@string/ValidateButton"
+                android:layout_toLeftOf="@id/typical_week_cancel_button"
+                android:layout_gravity="right"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Djoro</string>
+    <string name="temp_unit">°C</string>
+    <string name="improveButton">Economiser +</string>
+    <string name="savingsTextView">Mes économies :</string>
+    <string name="thermostatTextView">Mon thermostat:</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_menu_settings">Paramètres</string>
+    <string name="Login">Login</string>
+    <string name="attempts">Tentatives restantes:</string>
+    <string name="password">Mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="title_activity_signin">S\'enregistrer</string>
+    <string name="email">Adresse email</string>
+    <string name="confirmPassword">Confirmer mot de passe</string>
+    <string name="signinButton">S\'inscrire</string>
+    <string name="defaultTargetTemperatureTextView">21°C</string>
+    <string name="BoostButton">Boost</string>
+    <string name="SetAwayButton">Absence</string>
+    <string name="IAmBackButton">Je rentre</string>
+    <string name="title_fragment_save_more">Economiser +</string>
+    <string name="title_fragment_home">Ma Maison</string>
+    <string name="title_fragment_typical_week">Semaine Type</string>
+    <string name="section_settings">Réglages</string>
+    <string name="card_savings_report_title">Mes économies</string>
+    <string name="card_savings_report_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="card_savings_report_inner_title">68 €</string>
+    <string name="card_temp_control_title_mode_away">Absent</string>
+    <string name="card_temp_control_title_mode_night">Nuit</string>
+    <string name="card_temp_control_title_mode_comfort">Confort</string>
+    <string name="card_temp_control_title_mode_boost">Boost</string>
+    <string name="action_menu_refresh">Rafraichir</string>
+    <string name="action_menu_about">A propos</string>
+    <string name="euro_symbol">€</string>
+    <string name="celsuis_degree">°C</string>
+    <string name="temp_control_now">Actuellement :</string>
+    <string name="ValidateButton">Valider</string>
+    <string name="CancelButton">Annuler</string>
+    <string name="EditButton">Editer</string>
+    <string name="WorkingDay">Jours travaillés</string>
+    <string name="nonWorkingDay">Jours de repos</string>
+
+    <string-array name="set_away_duration_unit">
+        <item>Heure(s)</item>
+        <item>Jour(s)</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_set_away_period_departure_label">Date de départ :</string>
+    <string name="fragment_set_away_period_return_label">Date de retour :</string>
+    <string name="fragment_set_away_period_set_date_question">séléctionnez une date…</string>
+    <string name="fragment_set_away_period_default_header_title">Période d\'absence</string>
+    <string name="fragment_set_away_period_default_header_information">Set away period by setting departure and return dates.</string>
+
+
+    <!-- Settings -->
+    <string name="pref_dev_settings_title">Options pour développeurs</string>
+    <string name="pref_summary_server_url">URL du serveur de backend</string>
+    <string name="pref_title_server_url">URL serveur</string>
+    <string name="pref_dialog_title_edittext_server_url">Nouvelle URL du serveur</string>
+    <string name="pref_key_server_url">pref_key_server_url</string>
+    <string name="wakeUpTime">Je me lève à :</string>
+    <string name="goToBedTime">Je me couche à :</string>
+    <string name="goToWorkTime">Je pars à :</string>
+    <string name="backHomeTime">Je rentre à :</string>
+    <string name="applyChanges">Appliquer les changements</string>
+    <string name="displayed_title_fragment_typical_week">Semaine type</string>
+    <string name="economy">économisés</string>
+    <string name="button_apply">Régler</string>
+
+</resources>
